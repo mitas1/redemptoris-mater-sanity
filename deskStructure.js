@@ -1,6 +1,6 @@
 import S from "@sanity/desk-tool/structure-builder";
 
-const hiddenDocTypes = listItem => !["mainArticle"].includes(listItem.getId());
+const hiddenDocTypes = listItem => !["mainArticle", "settings"].includes(listItem.getId());
 
 export default () =>
     S.list()
@@ -15,4 +15,12 @@ export default () =>
                         .documentId("main-article"),
                 ),
             ...S.documentTypeListItems().filter(hiddenDocTypes),
+            S.listItem()
+                .title("Settings")
+                .child(
+                    S.editor()
+                        .id("settings")
+                        .schemaType("settings")
+                        .documentId("settings"),
+                ),
         ]);

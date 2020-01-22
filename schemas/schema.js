@@ -6,8 +6,9 @@ import article from "./article";
 import author from "./author";
 import blockContent from "./blockContent";
 import mainArticle from "./mainArticle";
+import settings from "./settings";
 
 export default createSchema({
     name: "default",
-    types: schemaTypes.concat([article, author, blockContent, mainArticle]),
+    types: schemaTypes.concat([article, author, blockContent, mainArticle, settings]),
 });
