@@ -10,5 +10,11 @@ import settings from "./settings";
 
 export default createSchema({
     name: "default",
-    types: schemaTypes.concat([article, author, blockContent, mainArticle, settings]),
+    types: schemaTypes.concat([
+        article,
+        author,
+        blockContent,
+        mainArticle,
+        settings,
+    ]),
 });

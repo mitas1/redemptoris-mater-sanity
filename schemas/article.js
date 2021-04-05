@@ -12,7 +12,7 @@ export const ARTICLE_FIELDS = [
             source: "title",
             maxLength: 96,
         },
-        validation: Rule => Rule.required(),
+        validation: (Rule) => Rule.required(),
     },
     {
         name: "mainImage",
@@ -29,16 +29,13 @@ export const ARTICLE_FIELDS = [
         name: "publishedAt",
         title: "Published at",
         type: "datetime",
-        validation: Rule => Rule.required(),
+        validation: (Rule) => Rule.required(),
     },
     {
         name: "bodyPreview",
         title: "Body Preview",
         type: "string",
-        validation: Rule =>
-            Rule.required()
-                .min(80)
-                .max(160),
+        validation: (Rule) => Rule.required().min(80).max(160),
     },
     {
         name: "body",

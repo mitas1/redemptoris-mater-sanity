@@ -14,11 +14,15 @@
         "@sanity/default-login",
         "@sanity/desk-tool"
     ],
-    "parts": [{
-        "name": "part:@sanity/desk-tool/structure",
-        "path": "./deskStructure.js"
-    }, {
-        "name": "part:@sanity/base/schema",
-        "path": "./schemas/schema.js"
-    }]
+    "env": {
+        "development": {
+            "plugins": ["@sanity/vision"]
+        }
+    },
+    "parts": [
+        {
+            "name": "part:@sanity/base/schema",
+            "path": "./schemas/schema"
+        }
+    ]
 }

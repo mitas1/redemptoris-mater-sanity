@@ -10,13 +10,13 @@ export default {
                 { title: "Normal", value: "normal" },
                 { title: "H1", value: "h1" },
                 { title: "H2", value: "h2" },
-                { title: "Quote", value: "blockquote" }
+                { title: "Quote", value: "blockquote" },
             ],
             lists: [{ title: "Bullet", value: "bullet" }],
             marks: {
                 decorators: [
                     { title: "Strong", value: "strong" },
-                    { title: "Emphasis", value: "em" }
+                    { title: "Emphasis", value: "em" },
                 ],
                 annotations: [
                     {
@@ -27,12 +27,12 @@ export default {
                             {
                                 title: "URL",
                                 name: "href",
-                                type: "url"
-                            }
-                        ]
-                    }
-                ]
-            }
-        }
-    ]
+                                type: "url",
+                            },
+                        ],
+                    },
+                ],
+            },
+        },
+    ],
 };
