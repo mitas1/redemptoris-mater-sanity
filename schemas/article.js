@@ -48,6 +48,27 @@ export const ARTICLE_FIELDS = [
         type: "array",
         of: [{ type: "image" }],
     },
+    {
+        title: "PDF attachement",
+        name: "file",
+        type: "file",
+        options: {
+            storeOriginalFilename: true,
+            accept: "application/pdf",
+        },
+        fields: [
+            {
+                name: "name",
+                type: "string",
+                title: "Name",
+            },
+            {
+                name: "caption",
+                type: "string",
+                title: "Caption",
+            },
+        ],
+    },
 ];
 
 export default {
